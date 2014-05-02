@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8" standalone="no"?>
+<application xmlns="http://ns.adobe.com/air/application/3.4">
+
+	<id>Bundle ID.debug</id>
+	<filename>PushSample</filename>
+	<name>PushSample-debug</name>
+	<versionNumber>0.0.0</versionNumber>
+	
+	<!-- <versionLabel></versionLabel> -->
+
+	
+	<initialWindow>
+		
+		<content>PushSample.swf</content>
+		
+        <!-- <aspectRatio></aspectRatio> -->
+
+        <renderMode>cpu</renderMode> 
+        <!-- <depthAndStencil></depthAndStencil> -->
+
+	    <autoOrients>true</autoOrients>
+        <fullScreen>false</fullScreen>
+        <visible>true</visible>
+    </initialWindow>
+	<supportedLanguages>en fr</supportedLanguages>
+    <icon>
+		<image57x57>assets/icon_57.png</image57x57>
+        <image72x72>assets/icon_72.png</image72x72>
+        <image114x114>assets/icon_114.png</image114x114>
+	</icon> 
+	<iPhone> 
+		
+		 <InfoAdditions>
+            <![CDATA[
+                <key>UIDeviceFamily</key>
+                <array>
+                    <string>1</string>
+                    <string>2</string>
+                </array>
+                <key>UIStatusBarStyle</key>
+                <string>UIStatusBarStyleBlackOpaque</string>
+                <key>UIRequiresPersistentWiFi</key>
+                <string>YES</string>
+            ]]>
+        </InfoAdditions> 
+		 <Entitlements>
+            <![CDATA[
+			<key>aps-environment</key>
+			<string>development</string>
+            ]]>
+        </Entitlements>  
+	 <requestedDisplayResolution>high</requestedDisplayResolution> 
+	 </iPhone> 
+
+	
+
+</application>
